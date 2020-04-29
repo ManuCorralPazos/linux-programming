@@ -1,0 +1,101 @@
+
+manster   1251  0.0  0.1 15:25:02 00:00:00 systemd
+manster   1252  0.0  0.0 15:25:02 00:00:00 (sd-pam)
+manster   1371  8.4  0.2 15:25:03 00:19:06 pulseaudio
+manster   1378  0.0  0.1 15:25:04 00:00:01 gnome-keyring-d
+manster   1382  0.0  0.0 15:25:04 00:00:00 gdm-x-session
+manster   1388  0.0  0.0 15:25:05 00:00:11 dbus-daemon
+manster   1406  0.0  0.1 15:25:06 00:00:00 gnome-session-b
+manster   1476  0.0  0.0 15:25:07 00:00:00 ssh-agent
+manster   1496  0.0  0.1 15:25:07 00:00:00 gvfsd
+manster   1501  0.0  0.1 15:25:07 00:00:00 gvfsd-fuse
+manster   1526  0.0  0.1 15:25:08 00:00:00 at-spi-bus-laun
+manster   1533  0.0  0.0 15:25:08 00:00:00 dbus-daemon
+manster   1543  0.0  0.0 15:25:08 00:00:02 at-spi2-registr
+manster   1545  0.0  0.1 15:25:08 00:00:01 xdg-desktop-por
+manster   1552  0.0  0.0 15:25:09 00:00:00 xdg-document-po
+manster   1555  0.0  0.0 15:25:10 00:00:00 xdg-permission-
+manster   1567  0.0  0.3 15:25:12 00:00:00 xdg-desktop-por
+manster   1568  0.0  0.0 15:25:12 00:00:00 gnome-session-c
+manster   1582  0.0  0.0 15:25:12 00:00:00 dconf-service
+manster   1591  0.0  0.2 15:25:13 00:00:00 gnome-session-b
+manster   1614 13.4  8.4 15:25:14 00:30:33 gnome-shell
+manster   1641  0.0  0.3 15:25:19 00:00:00 gnome-shell-cal
+manster   1647  0.0  0.4 15:25:20 00:00:00 evolution-sourc
+manster   1656  0.0  0.6 15:25:20 00:00:02 goa-daemon
+manster   1658  0.0  0.1 15:25:20 00:00:00 gvfs-udisks2-vo
+manster   1663  0.0  0.0 15:25:20 00:00:00 gvfs-mtp-volume
+manster   1670  0.0  0.0 15:25:20 00:00:00 gvfs-gphoto2-vo
+manster   1684  0.0  0.1 15:25:20 00:00:00 gvfs-afc-volume
+manster   1694  0.0  0.1 15:25:20 00:00:00 gvfs-goa-volume
+manster   1716  0.0  0.0 15:25:21 00:00:00 gvfsd-metadata
+manster   1741  0.0  0.1 15:25:21 00:00:00 goa-identity-se
+manster   1755  0.1  0.1 15:25:22 00:00:21 ibus-daemon
+manster   1763  0.0  0.1 15:25:22 00:00:00 ibus-memconf
+manster   1764  0.0  0.3 15:25:22 00:00:06 ibus-extension-
+manster   1767  0.0  0.3 15:25:22 00:00:00 ibus-x11
+manster   1770  0.0  0.1 15:25:22 00:00:00 ibus-portal
+manster   1782  0.0  0.1 15:25:22 00:00:00 gvfsd-trash
+manster   1784  0.0  0.6 15:25:22 00:00:00 evolution-calen
+manster   1792  0.0  0.1 15:25:22 00:00:00 gsd-housekeepin
+manster   1793  0.0  0.1 15:25:22 00:00:00 gsd-a11y-settin
+manster   1794  0.0  0.1 15:25:22 00:00:00 gsd-print-notif
+manster   1795  0.0  0.1 15:25:22 00:00:03 gsd-sharing
+manster   1796  0.0  0.3 15:25:22 00:00:00 gsd-xsettings
+manster   1797  0.0  0.1 15:25:22 00:00:00 gsd-wwan
+manster   1798  0.0  0.0 15:25:22 00:00:00 gsd-rfkill
+manster   1799  0.0  0.1 15:25:22 00:00:00 gsd-sound
+manster   1800  0.0  0.3 15:25:22 00:00:00 gsd-color
+manster   1802  0.0  0.1 15:25:22 00:00:00 gsd-smartcard
+manster   1805  0.0  0.2 15:25:22 00:00:00 gsd-datetime
+manster   1806  0.0  0.0 15:25:22 00:00:00 gsd-screensaver
+manster   1808  0.0  0.3 15:25:22 00:00:00 gsd-power
+manster   1809  0.0  0.3 15:25:22 00:00:00 gsd-keyboard
+manster   1811  0.0  0.3 15:25:22 00:00:00 gsd-media-keys
+manster   1812  0.0  0.3 15:25:22 00:00:00 gsd-wacom
+manster   1861  0.2  0.3 15:25:22 00:00:34 tracker-miner-f
+manster   1871  0.0  0.0 15:25:22 00:00:00 gsd-disk-utilit
+manster   1883  0.0  0.9 15:25:22 00:00:01 evolution-alarm
+manster   1895  0.0  0.1 15:25:22 00:00:00 gsd-printer
+manster   1902  0.0  0.1 15:25:23 00:00:04 ibus-engine-sim
+manster   1981  0.0  0.3 15:25:25 00:00:00 evolution-addre
+manster   2057  0.0  1.1 15:25:42 00:00:05 variety
+manster   2113  0.0  0.1 15:25:46 00:00:00 gvfsd-network
+manster   2120  0.0  0.2 15:25:46 00:00:00 gvfsd-smb-brows
+manster   2127  0.0  0.1 15:25:47 00:00:00 gvfsd-dnssd
+manster   2200  0.0  1.8 15:26:22 00:00:08 gnome-software
+manster   2203  0.0  0.3 15:26:22 00:00:00 update-notifier
+manster   4198  1.2  1.6 15:31:12 00:02:41 Discord
+manster   4301  0.0  0.4 15:31:15 00:00:00 Discord
+manster   4326  7.4  1.5 15:31:18 00:16:19 Discord
+manster   4336  0.1  0.7 15:31:18 00:00:15 Discord
+manster   4371 36.3  4.2 15:31:20 01:19:59 Discord
+manster  10184  0.0  0.5 17:34:21 00:00:00 seahorse
+manster  10342  1.2  1.6 17:34:25 00:01:12 code
+manster  10344  0.0  0.5 17:34:25 00:00:00 code
+manster  10367  1.9  1.6 17:34:27 00:01:53 code
+manster  10382  0.0  0.7 17:34:28 00:00:00 code
+manster  10391  4.9  3.2 17:34:28 00:04:46 code
+manster  10427  0.1  1.5 17:34:31 00:00:06 code
+manster  10449  0.2  2.0 17:34:32 00:00:12 code
+manster  10466  0.0  1.7 17:34:33 00:00:05 code
+manster  10503  0.0  1.4 17:34:35 00:00:04 cpptools
+manster  10563  0.0  0.1 17:34:37 00:00:00 cpptools-srv
+manster  11199  6.4  5.6 17:42:30 00:05:45 firefox
+manster  11332  0.6  2.2 17:42:33 00:00:36 Web Content
+manster  11381  1.6  5.4 17:42:34 00:01:26 WebExtensions
+manster  11433  2.5  4.5 17:42:35 00:02:13 Web Content
+manster  23501  0.0  0.5 18:36:15 00:00:01 RDD Process
+manster  23576  1.7  2.4 18:38:36 00:00:35 Web Content
+manster  23614  0.5  2.3 18:38:37 00:00:11 Web Content
+manster  23856  0.2  1.9 18:45:11 00:00:03 Web Content
+manster  23899  1.7  2.5 18:45:25 00:00:26 Web Content
+manster  24088  0.0  0.5 18:46:39 00:00:00 Discord
+manster  24339  1.0  2.8 18:47:51 00:00:15 Web Content
+manster  24553  0.0  1.0 18:53:12 00:00:00 Web Content
+manster  25239  1.2  0.3 19:11:22 00:00:00 tracker-store
+manster  25273  3.5  0.5 19:11:24 00:00:00 gnome-terminal-
+manster  25283  0.1  0.0 19:11:24 00:00:00 bash
+manster  25293  0.0  0.0 19:11:38 00:00:00 bash
+manster  25294  0.0  0.0 19:11:38 00:00:00 ps
+manster  25295  0.0  0.0 19:11:38 00:00:00 grep
