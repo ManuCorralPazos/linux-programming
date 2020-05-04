@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <mqueue.h>
+#include <string.h>
+#include <unistd.h>
+#include <time.h>
 
 #define MAX_BUFFER 6 //tamaño del buffer
 #define DATOS_A_PRODUCIR 100 //numero de datos a producir/consumir
@@ -17,26 +20,39 @@ int main(){
     attr.mq_msgsize=sizeof(char); //tamaño maximo de mensajes
 
     //Borrado de los buffers de entrada por si existían de una ejecución previa
-    mq_unlink("/ALMACEN1");
-    mq_unlink("/ALMACEN2");
+    //mq_unlink("/ALMACEN1");
+    //mq_unlink("/ALMACEN2");
 
     //Apertura de los buffers
     almacen1=mq_open("/ALMACEN1", O_CREAT|O_WRONLY, 0777, &attr);
-    almacen2=mq_open("/ALMACEN2", O_CREAT|O_WRONLY, 0777, &attr);
+    almacen2=mq_open("/ALMACEN2", O_CREAT|O_RDONLY, 0777, &attr);
 
     if((almacen1==-1) || (almacen2==-1)){
         perror("mq_open");
         exit(EXIT_FAILURE);
     }
     //funcion de producir
-
+    srand(time(NULL));
+    int posicion=MAX_BUFFER-1; //indice del array en el que hay que producir
     char elemento;
+    char entrada;
+    double dormir=0.0;
     char mensaje[MAX_BUFFER];
     for(int i=0; i<DATOS_A_PRODUCIR; i++){
         //producir elemento
-        elemento='A' + (rand()%(122-65)); //genera una letra aleatoria
-        mq_receive(almacen2, mensaje, attr.mq_msgsize,0);
-        
+        elemento='A' + (rand()%(90-65)); //genera una letra aleatoria
+        //printf("%c\n", elemento);
+        dormir=drand48()*4.0;
+        sleep(dormir);
+        mq_receive(almacen2, &entrada, attr.mq_msgsize,0);
+        //mensaje[posicion]=entrada;
+        //posicion--;
+        printf("Productor\n\tMensaje recibido: %c\n", entrada);
+        //en este caso se indica la cola de la que se hace el recieve, dónde se almacena, el tamaño, y la prioridad
+        //mensaje[posicion]=elemento;
+        printf("\tElemento introducido: %c\n", elemento);
+        mq_send(almacen1, &elemento, sizeof(elemento), 0);
+        printf("\tMensaje enviado: %c\n", elemento);
     }
     //acaba la función de producir
     mq_close(almacen1);
