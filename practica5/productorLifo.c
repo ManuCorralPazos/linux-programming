@@ -32,7 +32,7 @@ int main(){
 
     char elemento;
     char mensaje[MAX_BUFFER];
-    while(1){
+    for(int i=0; i<DATOS_A_PRODUCIR; i++){
         //producir elemento
         elemento='A' + (rand()%(122-65)); //genera una letra aleatoria
         mq_receive(almacen2, mensaje, attr.mq_msgsize,0);
