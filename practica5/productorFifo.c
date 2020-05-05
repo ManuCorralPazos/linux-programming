@@ -34,9 +34,9 @@ int main(){
     //funcion de producir
     srand(time(NULL));
     int posicion=MAX_BUFFER-1; //indice del array en el que hay que producir
-    char elemento;
-    char entrada;
-    double dormir=0.0;
+    char elemento; //elemento que se va a producir
+    char entrada; //se utilizara para recibir los mensajes vacios del consumidor
+    double dormir=0.0; //variable para el sleep
     char mensaje[MAX_BUFFER];
     for(int i=0; i<DATOS_A_PRODUCIR; i++){
         //producir elemento

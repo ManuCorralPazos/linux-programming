@@ -34,9 +34,10 @@ int main(){
     //funcion de producir
     srand(time(NULL));
     int posicion=MAX_BUFFER-1; //indice del array en el que hay que producir
-    char elemento;
-    char entrada;
-    double dormir=0.0;
+    char elemento; //el elemento que se producirá 
+    char entrada; //servirá para recibir los mensajes vacíos del consumidor
+    double dormir=0.0; //variable para el sleep
+    unsigned int prio=0; //utilizada en la prioridad del send para hacer cola LIFOo87
     char mensaje[MAX_BUFFER];
     for(int i=0; i<DATOS_A_PRODUCIR; i++){
         //producir elemento
@@ -51,8 +52,9 @@ int main(){
         //en este caso se indica la cola de la que se hace el recieve, dónde se almacena, el tamaño, y la prioridad
         //mensaje[posicion]=elemento;
         printf("\tElemento introducido: %c\n", elemento);
-        mq_send(almacen1, &elemento, sizeof(elemento), 0);
+        mq_send(almacen1, &elemento, sizeof(elemento), prio);
         printf("\tMensaje enviado: %c\n", elemento);
+        prio++;
     }
     //acaba la función de producir
     mq_close(almacen1);
