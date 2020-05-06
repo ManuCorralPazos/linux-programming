@@ -34,9 +34,7 @@ int main(){
 
     char elemento='_';
     char entrada='A';
-    double dormir=0.0;
-    char mensaje[MAX_BUFFER];
-    
+    double dormir=0.0;    
 
     for(int i=0; i<MAX_BUFFER; i++){
         mq_send(almacen2, &elemento, sizeof(elemento), 0);

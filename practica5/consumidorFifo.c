@@ -51,7 +51,6 @@ int main(){
     //por tanto, ha de enviar menos mensajes en el siguiente bucle for
         mq_receive(almacen1, &entrada, attr.mq_msgsize, 0);
         printf("Consumidor\n\tMensaje recibido: %c\n", entrada);
-        //elemento=mensaje[1];
         mq_send(almacen2, &elemento, sizeof(elemento), 0);
         printf("\tElemento consumido: %c\n", entrada);
         dormir=drand48()*4.0;

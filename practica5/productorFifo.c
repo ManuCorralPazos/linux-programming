@@ -33,11 +33,9 @@ int main(){
     }
     //funcion de producir
     srand(time(NULL));
-    int posicion=MAX_BUFFER-1; //indice del array en el que hay que producir
     char elemento; //elemento que se va a producir
     char entrada; //se utilizara para recibir los mensajes vacios del consumidor
     double dormir=0.0; //variable para el sleep
-    char mensaje[MAX_BUFFER];
     for(int i=0; i<DATOS_A_PRODUCIR; i++){
         //producir elemento
         elemento='A' + (rand()%(90-65)); //genera una letra aleatoria
@@ -45,11 +43,8 @@ int main(){
         dormir=drand48()*4.0;
         sleep(dormir);
         mq_receive(almacen2, &entrada, attr.mq_msgsize,0);
-        //mensaje[posicion]=entrada;
-        //posicion--;
         printf("Productor\n\tMensaje recibido: %c\n", entrada);
         //en este caso se indica la cola de la que se hace el recieve, dónde se almacena, el tamaño, y la prioridad
-        //mensaje[posicion]=elemento;
         printf("\tElemento introducido: %c\n", elemento);
         mq_send(almacen1, &elemento, sizeof(elemento), 0);
         printf("\tMensaje enviado: %c\n", elemento);
